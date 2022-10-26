@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from '../screens/Home';
 import TabNavigator from './TabNavigator';
 import AddContact from '../screens/AddContact';
+import AddGroup from '../screens/AddGroup';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ const Router = props => {
         />
         <Stack.Screen name={'Go To Contacts!'} component={TabNavigator}/>
         <Stack.Screen name={'Add Contact'} component={AddContact}/>
+        <Stack.Screen name={'Add Group'} component={AddGroup}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

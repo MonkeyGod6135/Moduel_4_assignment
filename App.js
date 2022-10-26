@@ -19,6 +19,12 @@
    } catch (error) {
      console.log('Failed to create contacts table ' + error);
    }
+   
+   try {
+    db.createGroupsTable();
+  } catch (error) {
+    console.log('Failed to create groups table ' + error);
+  }
    return <Router />;
  };
  
